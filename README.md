@@ -56,7 +56,7 @@ Also, the transaction can be verified after navigating to Account and Transactio
 
 Steps to be followed:
 
-1. To run the application, open terminal, activate conda dev environment, change directory to application directory and type streamlit run fintech_finder.py.
+1. To run the application, open terminal, activate conda dev environment, change directory to application directory and type streamlit run `fintech_finder.py`.
 2. On the resulting webpage, select a candidate using the appropriate drop-down menu. Then, enter the number of hours that one would like to hire them for.
 3. Click the Send Transaction button to sign and send the transaction with your Ethereum account information. The webpage should should show transaction hash for the transaction. Also, the transaction can be verified after navigating to Account and Transactions sections of Ganache.
   
