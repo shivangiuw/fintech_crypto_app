@@ -25,27 +25,23 @@ The following ethereum transaction functions from `crypto_wallet.py` will be int
 * Customers will select a fintech professional from the application interface’s drop-down menu,and then input the amount of time for which they’ll hire the worker which will be multiplied by hourly rate of the candidate as provided in the candidate database in the application to arrive at `wage` (total ether) to be paid.
 * Next, send_transaction function is passed `customer's address`(using account.address), `receiver's address` (candidate_address picked from the candidate database)and `wage` value for `from`, `to` and  `toWei` attributes.
 * This function returns and saves transaction hash as variable named `transaction_hash` and displays the same on web inetrface.
-     
-
-## Usage:
-Steps to be followed:
-1. To run the application, open terminal, activate conda dev environment, change directory to application directory and type streamlit run fintech_finder.py.
-2. On the resulting webpage, select a candidate using the appropriate drop-down menu. Then, enter the number of hours that one would like to hire them for.
-3. Click the Send Transaction button to sign and send the transaction with your Ethereum account information. The webpage should should show transaction hash for the transaction. Also, the transaction can be verified after navigating to Account and Transactions sections of Ganache.
-  
-  
+   
 ## Testing and Transactions:
-
+ 
 ### Web application working:
 
 ![Web application_working](media/fintech_app.png)
 
+Select the candidate and enter number of hours to be hired for. After verifying the total wage to be paid, Send Transaction button can be used.
 
 ### Transaction hash:
 
+The webpage shows Validated transaction hash after the transaction is done using Send Transaction button/tab.
+
 ![Web application_working](media/transaction_hash.png)
 
-
+Also, the transaction can be verified after navigating to Account and Transactions sections of Ganache.
+  
 ### Transaction in Ganache:
 
 ![Web application_working](media/transaction.png)
@@ -54,6 +50,17 @@ Steps to be followed:
 ### Account in Ganache after transaction:
 
 ![Web application_working](media/account.png)
+
+
+## Usage:
+
+Steps to be followed:
+
+1. To run the application, open terminal, activate conda dev environment, change directory to application directory and type streamlit run fintech_finder.py.
+2. On the resulting webpage, select a candidate using the appropriate drop-down menu. Then, enter the number of hours that one would like to hire them for.
+3. Click the Send Transaction button to sign and send the transaction with your Ethereum account information. The webpage should should show transaction hash for the transaction. Also, the transaction can be verified after navigating to Account and Transactions sections of Ganache.
+  
+  
 
 
 ## Technologies
